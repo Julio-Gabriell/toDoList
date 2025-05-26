@@ -68,6 +68,22 @@ yarn start
 
 - ✅ Persistência de Dados: As tarefas permanecem salvas mesmo após recarregar a página.
 
+## 🚀 Atualizações Futuras
+
+Aqui estão algumas funcionalidades planejadas ou sugestões para versões futuras do projeto:
+
+- 🔒 **Sistema de autenticação** (login e cadastro de usuários)
+- 📁 **Organização por categorias ou tags**
+- 🔔 **Notificações de prazo próximo ou vencido**
+- 📊 **Painel com estatísticas de produtividade** (tarefas concluídas, pendentes, etc.)
+- 🌙 **Modo escuro** (Dark Mode)
+- 🔍 **Filtro e busca de tarefas** por título, status ou data
+- 📆 **Visualização em formato de calendário**
+- 📝 **Subtarefas ou checklist** dentro de uma tarefa
+
+Sinta-se à vontade para contribuir com sugestões ou melhorias!
+
+
 ## 📄 Licença
 
 Este projeto está licenciado sob a licença MIT.
