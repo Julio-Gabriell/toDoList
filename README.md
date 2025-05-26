@@ -52,15 +52,21 @@ yarn start
 
 ## ✨ Funcionalidades
 
-- ✅ Adicionar Tarefas: Permite criar novas tarefas com título e descrição.
+- ✅ Adicionar Tarefas: Permite criar novas tarefas com título e descrição, prioridade e data.
 
-- ✅ Listar Tarefas: Exibe uma lista de todas as tarefas cadastradas.
+- ✅ Listar Tarefas: Exibe uma lista de todas as tarefas cadastradas e as tarefas já concluídas.
+
+- ✅ Contador de Tempo Restante: Mostra o tempo que falta para o prazo de cada tarefa expirar.
 
 - ✅ Editar Tarefas: Possibilita a atualização das informações de uma tarefa existente.
 
 - ✅ Excluir Tarefas: Permite remover tarefas da lista.
 
 - ✅ Marcar como Concluída: Opção para marcar tarefas como concluídas ou pendentes.
+
+- ✅ Interface Responsiva: Layout adaptável a diferentes tamanhos de tela.
+
+- ✅ Persistência de Dados: As tarefas permanecem salvas mesmo após recarregar a página.
 
 ## 📄 Licença
 
