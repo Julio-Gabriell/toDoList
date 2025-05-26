@@ -1,7 +1,6 @@
 # 🚀 toDoList
 
-Nenhuma descrição fornecida.
-
+toDoList é uma aplicação web simples para gerenciamento de tarefas. Com uma interface intuitiva e responsiva, o usuário pode adicionar, editar, excluir e marcar tarefas como concluídas. Ideal para organizar rotinas pessoais ou profissionais de forma prática e eficiente.
 
 ![Estrelas](https://img.shields.io/github/stars/Julio-Gabriell/toDoList.svg)
 ![Forks](https://img.shields.io/github/forks/Julio-Gabriell/toDoList.svg)
@@ -18,14 +17,14 @@ Nenhuma descrição fornecida.
 
 ## 📖 Visão Geral
 
-Este repositório contém o código-fonte para toDoList. 
-
+O toDoList foi desenvolvido com o objetivo de oferecer uma solução simples e funcional para o controle de tarefas diárias. Este projeto serve como base para estudos e prática de desenvolvimento web com foco em funcionalidades CRUD (Create, Read, Update, Delete).
 
 ## 💻 Tecnologias
 
 - **PHP**
 - **Blade**
 - **JavaScript**
+- **Bootstrap**
 
 ## 🚀 Instalação
 
@@ -53,13 +52,20 @@ yarn start
 
 ## ✨ Funcionalidades
 
-- ✅ Funcionalidade 1
-- ✅ Funcionalidade 2
-- ✅ Funcionalidade 3
+- ✅ Adicionar Tarefas: Permite criar novas tarefas com título e descrição.
+
+- ✅ Listar Tarefas: Exibe uma lista de todas as tarefas cadastradas.
+
+- ✅ Editar Tarefas: Possibilita a atualização das informações de uma tarefa existente.
+
+- ✅ Excluir Tarefas: Permite remover tarefas da lista.
+
+- ✅ Marcar como Concluída: Opção para marcar tarefas como concluídas ou pendentes.
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a licença não especificada.
+Este projeto está licenciado sob a licença MIT.
+Sinta-se à vontade para usar, modificar e distribuir este projeto com os devidos créditos ao autor.
 
 ## 👨‍💻 Autor
 
