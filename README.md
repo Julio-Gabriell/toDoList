@@ -1,66 +1,98 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 toDoList
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+toDoList é uma aplicação web simples para gerenciamento de tarefas. Com uma interface intuitiva e responsiva, o usuário pode adicionar, editar, excluir e marcar tarefas como concluídas. Ideal para organizar rotinas pessoais ou profissionais de forma prática e eficiente.
 
-## About Laravel
+![Estrelas](https://img.shields.io/github/stars/Julio-Gabriell/toDoList.svg)
+![Forks](https://img.shields.io/github/forks/Julio-Gabriell/toDoList.svg)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📋 Tabela de Conteúdos
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [📖 Visão Geral](#-visão-geral)
+- [💻 Tecnologias](#-tecnologias)
+- [🚀 Instalação](#-instalação)
+- [📝 Como Usar](#-como-usar)
+- [✨ Funcionalidades](#-funcionalidades)
+- [📄 Licença](#-licença)
+- [👨‍💻 Autor](#-autor)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📖 Visão Geral
 
-## Learning Laravel
+O toDoList foi desenvolvido com o objetivo de oferecer uma solução simples e funcional para o controle de tarefas diárias. Este projeto serve como base para estudos e prática de desenvolvimento web com foco em funcionalidades CRUD (Create, Read, Update, Delete).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 💻 Tecnologias
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **PHP**
+- **Blade**
+- **JavaScript**
+- **Bootstrap**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Instalação
 
-## Laravel Sponsors
+```bash
+# Clone o repositório
+git clone https://github.com/Julio-Gabriell/toDoList.git
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# Entre no diretório do repositório
+cd toDoList
 
-### Premium Partners
+# Instale as dependências
+npm install
+# ou
+yarn install
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 📝 Como Usar
 
-## Contributing
+```bash
+# Execute a aplicação em modo de desenvolvimento
+npm start
+# ou
+yarn start
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## ✨ Funcionalidades
 
-## Code of Conduct
+- ✅ Adicionar Tarefas: Permite criar novas tarefas com título e descrição, prioridade e data.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- ✅ Listar Tarefas: Exibe uma lista de todas as tarefas cadastradas e as tarefas já concluídas.
 
-## Security Vulnerabilities
+- ✅ Contador de Tempo Restante: Mostra o tempo que falta para o prazo de cada tarefa expirar.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- ✅ Editar Tarefas: Possibilita a atualização das informações de uma tarefa existente.
 
-## License
+- ✅ Excluir Tarefas: Permite remover tarefas da lista.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- ✅ Marcar como Concluída: Opção para marcar tarefas como concluídas ou pendentes.
+
+- ✅ Interface Responsiva: Layout adaptável a diferentes tamanhos de tela.
+
+- ✅ Persistência de Dados: As tarefas permanecem salvas mesmo após recarregar a página.
+
+## 🚀 Atualizações Futuras
+
+Aqui estão algumas funcionalidades planejadas ou sugestões para versões futuras do projeto:
+
+- 🔒 **Sistema de autenticação** (login e cadastro de usuários)
+- 📁 **Organização por categorias ou tags**
+- 🔔 **Notificações de prazo próximo ou vencido**
+- 📊 **Painel com estatísticas de produtividade** (tarefas concluídas, pendentes, etc.)
+- 🌙 **Modo escuro** (Dark Mode)
+- 🔍 **Filtro e busca de tarefas** por título, status ou data
+- 📆 **Visualização em formato de calendário**
+- 📝 **Subtarefas ou checklist** dentro de uma tarefa
+
+Sinta-se à vontade para contribuir com sugestões ou melhorias!
+
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT.
+Sinta-se à vontade para usar, modificar e distribuir este projeto com os devidos créditos ao autor.
+
+## 👨‍💻 Autor
+
+- [Julio-Gabriell](https://github.com/Julio-Gabriell)
+
+---
+
+Gerado com ❤️ por [ReadmeMaker](https://readmemaker.com) | Desenvolvido por [LucaDevel0per](https://github.com/LucaDevel0per)
