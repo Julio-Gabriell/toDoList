@@ -21,7 +21,7 @@
         <div class="mb-3">
             <label for="tituloTarefa" class="form-label">Titulo da Tarefa:</label>
             <input type="text" id="tituloTarefa" name="titulo" class="form-control"
-            placeholder="Ex: Entregar atividade Valdir">
+            placeholder="Ex: Entregar atividade da Faculdade">
         </div>
         
         <div class="mb-3">
