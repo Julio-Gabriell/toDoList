@@ -19,8 +19,17 @@ class TarefasController extends Controller
     {
         $tarefas = Tarefas::where('concluida', 0)->get();
 
-
         foreach ($tarefas as $tarefa) {
+
+            $prioridade = $tarefa->prioridade;
+
+            $tarefa->classe_prioridade = match ($prioridade) {
+                'alta' => 'bg-danger',
+                'media' => 'bg-warning',
+                'baixa' => 'bg-success',
+                default => 'bg-secondary'
+            };
+
             $data_entrega = Carbon::parse($tarefa->data_entrega);
             $agora = Carbon::now();
 

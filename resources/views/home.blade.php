@@ -17,10 +17,13 @@
 
     @foreach ($tarefas as $tarefa)
         <div class="card text-tertiary bg-white shadow-sm mb-3 d-flex">
-            <div class="card-body">
+            <div class="card-body position-relative">
                 <h4 class="card-title">{{ $tarefa->titulo }}</h4>
                 <p class="card-text text-wrap" style="width: 28rem;">{{ $tarefa->descricao }}</p>
-                <div class="d-flex align-items-center justify-content-center gap-2">
+                <span class="badge {{ $tarefa->classe_prioridade }}">
+    {{ $tarefa->prioridade }}
+</span>
+                <div class="d-flex flex-column align-items-end justify-content-start gap-2 position-absolute top-0 end-0 m-3">
                     <a href="{{ route('tarefas.editar', $tarefa->id)}}" class="btn btn-primary"><i
                             class="fa-solid fa-pen"></i></a>
                     <form action="{{ route('tarefas.destroy', $tarefa->id) }}" method="POST"
@@ -32,7 +35,7 @@
                     <a href="{{ route('tarefas.concluir', $tarefa->id) }}" class="btn btn-success"><i
                             class="fa-solid fa-check"></i></a>
                 </div>
-                <div class="card-footer bg-white">
+                <div class="card-footer bg-white mt-4">
                     <small class="text-secondary">Criada em {{ $tarefa->created_at->format('d/m/y') }}</small>
                     <span class="badge {{ $tarefa->statusTempo['classe'] }} ">
                         {{ $tarefa->statusTempo['text'] }}
