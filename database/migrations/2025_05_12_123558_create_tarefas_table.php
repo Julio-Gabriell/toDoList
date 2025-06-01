@@ -11,7 +11,7 @@ return new class extends Migration {
             $table->id();
             $table->string('titulo');
             $table->text('descricao')->nullable();
-            $table->enum('prioridade', ['baixa', 'media', 'alta'])->default('baixa');
+            $table->enum('prioridade', ['Baixa', 'Media', 'Alta'])->default('Baixa');
             $table->dateTime('data_entrega')->nullable();
             $table->boolean('concluida')->default(false);
             $table->timestamps();

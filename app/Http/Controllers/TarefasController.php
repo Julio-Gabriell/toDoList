@@ -24,9 +24,9 @@ class TarefasController extends Controller
             $prioridade = $tarefa->prioridade;
 
             $tarefa->classe_prioridade = match ($prioridade) {
-                'alta' => 'bg-danger',
-                'media' => 'bg-warning',
-                'baixa' => 'bg-success',
+                'Alta' => 'bg-danger',
+                'Media' => 'bg-warning',
+                'Baixa' => 'bg-success',
                 default => 'bg-secondary'
             };
 

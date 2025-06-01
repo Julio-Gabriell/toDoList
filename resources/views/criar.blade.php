@@ -33,9 +33,9 @@
         <div class="mb-3">
             <label for="prioriadadeTarefa" class="form-label">Prioridade da Tarefa:</label>
             <select class="form-select" aria-label="Escolha uma prioridade" id="prioridade" name="prioridade">
-                <option selected value="baixa">Baixa</option>
-                <option value="media">Média</option>
-                <option value="alta">Alta</option>
+                <option selected value="Baixa">Baixa</option>
+                <option value="Media">Média</option>
+                <option value="Alta">Alta</option>
             </select>
         </div>
 

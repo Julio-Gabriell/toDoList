@@ -24,7 +24,7 @@ class TarefasRequest extends FormRequest
         return [
             'titulo' => 'required|string|max:255',
             'descricao' => 'required|string|min:10',
-            'prioridade' => 'required|in:baixa,media,alta',
+            'prioridade' => 'required|in:Baixa,Media,Alta',
             'data_entrega' => 'required|date|after_or_equal:today',
         ];
     }
