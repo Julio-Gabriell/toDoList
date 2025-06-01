@@ -45,8 +45,8 @@
         </div>
 
         <div class="justify-content-center d-flex gap-2">
-            <button type="submit" class="btn btn-success">Cadastrar</button>
-            <a href="{{ route('tarefas.home') }}" class="btn btn-danger">Cancelar Alterações</a>
+            <button type="submit" class="btn btn-success">Cadastrar <i class="fa-solid fa-check"></i></button>
+            <a href="{{ route('tarefas.home') }}" class="btn btn-danger">Cancelar Alterações <i class="fa-solid fa-ban"></i></a>
         </div>
     </form>
 

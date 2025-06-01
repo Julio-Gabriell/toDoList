@@ -3,7 +3,9 @@
 @section('content')
 
     <h1 class="text-center">
-        Lista de tarefas
+        Lista de tarefas <button onclick="toggleTheme()" class="btn btn-black m-3">
+            Alternar tema <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
     </h1>
 
     @if(session('success'))
@@ -12,18 +14,15 @@
         </div>
     @endif
 
-
-
-
     @foreach ($tarefas as $tarefa)
         <div class="card text-tertiary bg-white shadow-sm mb-3 d-flex">
             <div class="card-body position-relative">
-                <h4 class="card-title">{{ $tarefa->titulo }}</h4>
-                <p class="card-text text-wrap" style="width: 28rem;">{{ $tarefa->descricao }}</p>
+                <h4 class="card-title text-black">{{ $tarefa->titulo }}</h4>
+                <p class="card-text text-wrap text-black" style="width: 28rem;">{{ $tarefa->descricao }}</p>
                 <span class="badge {{ $tarefa->classe_prioridade }}">
-    {{ $tarefa->prioridade }}
-</span>
-                <div class="d-flex flex-column align-items-end justify-content-start gap-2 position-absolute top-0 end-0 m-3">
+                    {{ $tarefa->prioridade }}
+                </span>
+                <div class="d-flex flex-column align-items-end justify-content-start gap-1 position-absolute top-0 end-0 m-3">
                     <a href="{{ route('tarefas.editar', $tarefa->id)}}" class="btn btn-primary"><i
                             class="fa-solid fa-pen"></i></a>
                     <form action="{{ route('tarefas.destroy', $tarefa->id) }}" method="POST"
@@ -47,9 +46,10 @@
 
 
     <div class="justify-content-center d-flex gap-2">
-        <a href=" {{ route('tarefas.create') }} " class="btn btn-success">Nova tarefa</a>
+        <a href=" {{ route('tarefas.create') }} " class="btn btn-success">Nova tarefa <i class="fa-solid fa-plus"></i></a>
 
-        <a href=" {{ route('tarefas.historico') }} " class="btn btn-primary">Histórico de tarefas</a>
+        <a href=" {{ route('tarefas.historico') }} " class="btn btn-primary">Histórico de tarefas <i
+                class="fa-solid fa-clock-rotate-left"></i></a>
     </div>
 
 @endsection

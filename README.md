@@ -76,7 +76,7 @@ Aqui estão algumas funcionalidades planejadas ou sugestões para versões futur
 - 📁 **Organização por categorias ou tags**
 - 🔔 **Notificações de prazo próximo ou vencido**
 - 📊 **Painel com estatísticas de produtividade** (tarefas concluídas, pendentes, etc.)
-- 🌙 **Modo escuro** (Dark Mode)
+- 🌙 **Modo escuro** (Dark Mode) ✅
 - 🔍 **Filtro e busca de tarefas** por título, status ou data
 - 📆 **Visualização em formato de calendário**
 - 📝 **Subtarefas ou checklist** dentro de uma tarefa
