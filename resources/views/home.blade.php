@@ -3,7 +3,7 @@
 @section('content')
 
     <h1 class="text-center">
-        Lista de tarefas <button onclick="toggleTheme()" class="btn btn-black m-3">
+        Lista de tarefas <button onclick="toggleTheme()" class="btn m-3">
             Alternar tema <i class="fa-solid fa-circle-half-stroke"></i>
         </button>
     </h1>
@@ -15,10 +15,10 @@
     @endif
 
     @foreach ($tarefas as $tarefa)
-        <div class="card text-tertiary bg-white shadow-sm mb-3 d-flex">
+        <div class="card text-body bg-body shadow-sm mb-3 d-flex">
             <div class="card-body position-relative">
-                <h4 class="card-title text-black">{{ $tarefa->titulo }}</h4>
-                <p class="card-text text-wrap text-black" style="width: 28rem;">{{ $tarefa->descricao }}</p>
+                <h4 class="card-title">{{ $tarefa->titulo }}</h4>
+                <p class="card-text text-wrap" style="width: 28rem;">{{ $tarefa->descricao }}</p>
                 <span class="badge {{ $tarefa->classe_prioridade }}">
                     {{ $tarefa->prioridade }}
                 </span>
@@ -34,7 +34,7 @@
                     <a href="{{ route('tarefas.concluir', $tarefa->id) }}" class="btn btn-success"><i
                             class="fa-solid fa-check"></i></a>
                 </div>
-                <div class="card-footer bg-white mt-4">
+                <div class="card-footer bg-body mt-4">
                     <small class="text-secondary">Criada em {{ $tarefa->created_at->format('d/m/y') }}</small>
                     <span class="badge {{ $tarefa->statusTempo['classe'] }} ">
                         {{ $tarefa->statusTempo['text'] }}

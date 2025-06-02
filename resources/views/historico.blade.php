@@ -7,7 +7,7 @@
     </h1>
 
     @foreach ($tarefasConcluidas as $tarefa)
-        <div class="card text-tertiary bg-white shadow-sm mb-3 d-flex">
+        <div class="card text-body bg-body shadow-sm mb-3 d-flex">
             <div class="card-body">
                 <h4 class="card-title">{{ $tarefa->titulo }}</h4>
                 <p class="card-text text-wrap" style="width: 28rem;">{{ $tarefa->descricao }}</p>
