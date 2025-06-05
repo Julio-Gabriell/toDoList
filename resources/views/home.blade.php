@@ -3,9 +3,7 @@
 @section('content')
 
     <h1 class="text-center">
-        Lista de tarefas <button onclick="toggleTheme()" class="btn m-3">
-            Alternar tema <i class="fa-solid fa-circle-half-stroke"></i>
-        </button>
+        Lista de tarefas 
     </h1>
 
     @if(session('success'))
