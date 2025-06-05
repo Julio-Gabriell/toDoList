@@ -25,6 +25,10 @@
             <!-- Dropdown de configurações -->
             <ul class="navbar-nav ms-auto">
                 @auth
+                 
+    <a onclick="toggleTheme()" class="btn btn-link nav-link">
+        <i class="fa-solid fa-moon fa-lg"></i>
+    </a>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-body" href="#" id="userDropdown" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,11 +56,11 @@
 
 @guest
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('login') }}">Entrar</a>
+        <a class="btn btn-link nav-link" href="{{ route('login') }}">Entrar</a>
     </li>
-    <button onclick="toggleTheme()" class="btn nav-item">
-            Alternar tema <i class="fa-solid fa-circle-half-stroke"></i>
-    </button>
+    <a onclick="toggleTheme()" class="btn btn-link nav-link">
+        <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+    </a>
     
 @endguest
 
