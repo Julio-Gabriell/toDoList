@@ -72,7 +72,7 @@ yarn start
 
 Aqui estão algumas funcionalidades planejadas ou sugestões para versões futuras do projeto:
 
-- 🔒 **Sistema de autenticação** (login e cadastro de usuários)
+- 🔒 **Sistema de autenticação** (login e cadastro de usuários) ✅
 - 📁 **Organização por categorias ou tags**
 - 🔔 **Notificações de prazo próximo ou vencido**
 - 📊 **Painel com estatísticas de produtividade** (tarefas concluídas, pendentes, etc.)

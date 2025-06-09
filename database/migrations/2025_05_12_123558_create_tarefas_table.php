@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->enum('prioridade', ['Baixa', 'Media', 'Alta'])->default('Baixa');
             $table->dateTime('data_entrega')->nullable();
             $table->boolean('concluida')->default(false);
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -17,7 +17,10 @@ class TarefasController extends Controller
      */
     public function index()
     {
-        $tarefas = Tarefas::where('concluida', 0)->get();
+        $tarefas = Tarefas::where('user_id', auth()->id())
+            ->where('concluida', 0)
+            ->get();
+
 
         foreach ($tarefas as $tarefa) {
 
@@ -48,7 +51,7 @@ class TarefasController extends Controller
                         'text' => "Faltam {$diferencaMin} minuto(s)",
                         'classe' => 'bg-warning'
                     ];
-                } elseif ($diferencaMin < 1440) { 
+                } elseif ($diferencaMin < 1440) {
                     $tarefa->statusTempo = [
                         'text' => "Faltam {$diferencaHoras}h {$restoMin}min",
                         'classe' => 'bg-warning'
@@ -81,7 +84,10 @@ class TarefasController extends Controller
     public function store(TarefasRequest $request)
     {
 
-        Tarefas::create($request->validated());
+        Tarefas::create([
+            ...$request->validated(),
+            'user_id' => auth()->id(),
+        ]);
 
         $titulo = $request->titulo;
 
@@ -143,7 +149,7 @@ class TarefasController extends Controller
     {
         $tarefasConcluidas = Tarefas::where('concluida', 1)->get();
 
-        return view('historico', compact('tarefasConcluidas')); 
+        return view('historico', compact('tarefasConcluidas'));
 
     }
 }

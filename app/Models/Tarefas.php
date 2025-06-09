@@ -9,5 +9,13 @@ class Tarefas extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['titulo', 'descricao', 'prioridade', 'data_entrega'];
+    protected $fillable = ['titulo', 'descricao', 'prioridade', 'data_entrega', 'user_id'];
+
+    public function user()
+{
+    return $this->belongsTo(User::class);
 }
+
+}
+
+
