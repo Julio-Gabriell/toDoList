@@ -26,6 +26,7 @@ class TarefasRequest extends FormRequest
             'descricao' => 'required|string|min:10',
             'prioridade' => 'required|in:Baixa,Media,Alta',
             'data_entrega' => 'required|date|after_or_equal:today',
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
         ];
     }
 
@@ -38,7 +39,11 @@ class TarefasRequest extends FormRequest
             'prioridade.in' => 'A prioridade deve ser baixa, média ou alta.',
             'data.required' => 'A data de entrega é obrigatória.',
             'data.date' => 'A data de entrega deve ser uma data válida.',
-            'data.after_or_equal' => 'A data de entrega não pode ser no passado.'
+            'data.after_or_equal' => 'A data de entrega não pode ser no passado.',
+            'img.required' => 'A imagem é obrigatória.',
+            'img.image' => 'O arquivo não é uma imagem.',
+            'img.mimes' => 'O arquivo deve ser: jpeg,png,jpg,gif.',
+            'img.max' => "A imagem deve ser menor."
         ];
     }
 }

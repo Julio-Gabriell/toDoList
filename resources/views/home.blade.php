@@ -14,6 +14,11 @@
 
     @foreach ($tarefas as $tarefa)
         <div class="card text-body bg-body shadow-sm mb-3 d-flex">
+    <div class="row g-0 align-items-center">
+        <div class="col-md-2 d-flex justify-content-center align-items-center">
+            <img src="{{ $tarefa->path }}" height="120" width="120" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-10">
             <div class="card-body position-relative">
                 <h4 class="card-title">{{ $tarefa->titulo }}</h4>
                 <p class="card-text text-wrap" style="width: 28rem;">{{ $tarefa->descricao }}</p>
@@ -40,6 +45,9 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
     @endforeach
 
 

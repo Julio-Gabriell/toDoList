@@ -84,11 +84,17 @@ class TarefasController extends Controller
     public function store(TarefasRequest $request)
     {
 
+
+    if ($request->file('img')) {
+        $path = $request->file('img')->store('uploads', 'public');
+
+        
         Tarefas::create([
             ...$request->validated(),
-            'user_id' => auth()->id(),
+            'user_id' => auth()->id(), 
+            'img' => $path 
         ]);
-
+    }
         $titulo = $request->titulo;
 
         return redirect('/')->with('success', ' A Tarefa ' . $titulo . ' foi cadastrada com sucesso!');

@@ -1,0 +1,26 @@
+// 1. Suas cores personalizadas
+$custom-colors: (
+  "destaque": #2EC4B6,
+  "texto": #011627,
+  "amarelo": #FFCE3E
+);
+
+// 2. Sobrescreve a variável ANTES de importar o Bootstrap
+$theme-colors: map-merge(
+  (
+    "primary": #0d6efd,
+    "secondary": #6c757d,
+    "success": #198754,
+    "info": #0dcaf0,
+    "warning": #ffc107,
+    "danger": #dc3545,
+    "light": #f8f9fa,
+    "dark": #212529
+  ),
+  $custom-colors
+);
+
+// 3. Importa o Bootstrap completo
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+  $theme-colors: $theme-colors
+);

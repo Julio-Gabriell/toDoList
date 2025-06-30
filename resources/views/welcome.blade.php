@@ -3,7 +3,11 @@
 @section("content")
     <div class="row">
         <div class="col-md-6">
-            <h1 class="display-2">Organize suas</h1>
+            <div class="p-5">
+                <h1 class="display-2 text-texto">Organize suas</h1>
+                <h1 class="display-2 bg-destaque text-amarelo">Tarefas</h1>
+                <p class="text-destaque">awdnakjwdnaodawodbawoudu</p>
+            </div>
         </div>
         <div class="col-md-6">
             <div class="d-flex justify-content-center">

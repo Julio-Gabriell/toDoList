@@ -16,7 +16,7 @@
     </div>
     @endif
 
-    <form action="{{ route('tarefas.cadastro') }}" method="post">
+    <form action="{{ route('tarefas.cadastro') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="tituloTarefa" class="form-label">Titulo da Tarefa:</label>
@@ -42,6 +42,11 @@
         <div class="mb-3">
             <label for="dataTarefa" class="form-label">Data da Tarefa:</label>
             <input type="datetime-local" id="dataTarefa" name="data_entrega" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="img" class="form-label">Imagem da tarefa:</label>
+            <input type="file" id="img" name="img" class="form-control">
         </div>
 
         <div class="justify-content-center d-flex gap-2">
