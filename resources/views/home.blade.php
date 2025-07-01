@@ -16,7 +16,8 @@
         <div class="card text-body bg-body shadow-sm mb-3 d-flex">
     <div class="row g-0 align-items-center">
         <div class="col-md-2 d-flex justify-content-center align-items-center">
-            <img src="{{ $tarefa->path }}" height="120" width="120" class="img-fluid rounded-start" alt="...">
+           <img src="{{ Str::startsWith($tarefa->path, 'uploads/') ? asset('storage/' . $tarefa->path) : asset($tarefa->path) }}" 
+     height="120" width="120" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-10">
             <div class="card-body position-relative">

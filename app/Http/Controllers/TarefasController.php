@@ -92,12 +92,12 @@ class TarefasController extends Controller
         Tarefas::create([
             ...$request->validated(),
             'user_id' => auth()->id(), 
-            'img' => $path 
+            'path' => $path 
         ]);
     }
         $titulo = $request->titulo;
 
-        return redirect('/')->with('success', ' A Tarefa ' . $titulo . ' foi cadastrada com sucesso!');
+        return redirect('/home')->with('success', ' A Tarefa ' . $titulo . $path . ' foi cadastrada com sucesso!');
     }
 
     /**
