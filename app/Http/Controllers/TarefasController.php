@@ -97,7 +97,7 @@ class TarefasController extends Controller
     }
         $titulo = $request->titulo;
 
-        return redirect('/home')->with('success', ' A Tarefa ' . $titulo . $path . ' foi cadastrada com sucesso!');
+        return redirect('/home')->with('success', ' A Tarefa ' . $titulo . ' foi cadastrada com sucesso!');
     }
 
     /**

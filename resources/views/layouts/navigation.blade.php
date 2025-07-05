@@ -58,6 +58,9 @@
     <li class="nav-item">
         <a class="btn btn-link nav-link" href="{{ route('login') }}">Entrar</a>
     </li>
+    <li class="nav-item">
+        <a class="btn btn-link bg-destaque text-texto nav-link" href="{{ route('register') }}">Cadastre-se</a>
+    </li>
     <a onclick="toggleTheme()" class="btn btn-link nav-link">
         <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
     </a>
