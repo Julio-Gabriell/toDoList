@@ -6,6 +6,7 @@ use App\Http\Requests\TarefasRequest;
 use App\Models\Tarefas;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use App\Events\TarefaCriada;
 
 Carbon::setLocale('pt_BR');
 date_default_timezone_set('America/Sao_Paulo');
@@ -84,17 +85,20 @@ class TarefasController extends Controller
     public function store(TarefasRequest $request)
     {
 
-
-    if ($request->file('img')) {
+    if ($request->hasFile('img')) {
         $path = $request->file('img')->store('uploads', 'public');
-
-        
-        Tarefas::create([
-            ...$request->validated(),
-            'user_id' => auth()->id(), 
-            'path' => $path 
-        ]);
+    } else {
+        $path = 'uploads/default.png';
     }
+        
+        $tarefa = Tarefas::create([
+            ...$request->validated(),
+            'user_id' => auth()->id(),
+            'path' => $path
+        ]);
+
+        event(new TarefaCriada($tarefa));
+
         $titulo = $request->titulo;
 
         return redirect('/home')->with('success', ' A Tarefa ' . $titulo . ' foi cadastrada com sucesso!');

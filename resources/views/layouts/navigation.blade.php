@@ -14,13 +14,25 @@
         <!-- Conteúdo do menu -->
         <div class="collapse navbar-collapse bg-body" id="navbarContent">
             <!-- Links de navegação -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            @auth
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('tarefas.home') }}">
                         {{ __('To-do list') }}
                     </a>
                 </li>
             </ul>
+            @endauth
+
+            @guest
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="/">
+                        {{ __('To-do list') }}
+                    </a>
+                </li>
+            </ul>
+            @endguest
 
             <!-- Dropdown de configurações -->
             <ul class="navbar-nav ms-auto">
@@ -59,7 +71,7 @@
         <a class="btn btn-link nav-link" href="{{ route('login') }}">Entrar</a>
     </li>
     <li class="nav-item">
-        <a class="btn btn-link bg-destaque text-texto nav-link" href="{{ route('register') }}">Cadastre-se</a>
+        <a class="btn btn-link bg-destaque text-white nav-link" href="{{ route('register') }}">Cadastre-se</a>
     </li>
     <a onclick="toggleTheme()" class="btn btn-link nav-link">
         <i class="fa-solid fa-circle-half-stroke fa-lg"></i>

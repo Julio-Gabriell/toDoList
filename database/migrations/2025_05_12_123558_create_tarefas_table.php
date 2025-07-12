@@ -13,7 +13,7 @@ return new class extends Migration {
             $table->text('descricao')->nullable();
             $table->enum('prioridade', ['Baixa', 'Media', 'Alta'])->default('Baixa');
             $table->dateTime('data_entrega')->nullable();
-            $table->string('path')->default('Assets/Imgs/logo.png');
+            $table->string('path');
             $table->boolean('concluida')->default(false);
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();

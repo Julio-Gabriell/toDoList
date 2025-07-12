@@ -5,9 +5,9 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="p-5">
-                    <h1 class="display-2 text-texto">Organize suas</h1>
+                    <h1 class="display-2 text-body">Organize suas</h1>
                     <h1 class="display-2 text-destaque">Tarefas</h1>
-                    <p class="text-texto fs-4 py-2">Organize o seu dia da melhor forma, crie suas atividades de forma rápida
+                    <p class="text-body fs-4 py-2">Organize o seu dia da melhor forma, crie suas atividades de forma rápida
                         e simples</p>
                     <a class="btn btn-lg text-white bg-destaque" href="{{ route('login') }}">Faça seu login</a>
                 </div>
@@ -62,9 +62,9 @@
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Redes Sociais</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-texto"><i class="fa-brands fa-instagram text-destaque"></i> Instagram</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-texto"><i class="fa-brands fa-facebook text-destaque"></i> Facebook</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-texto"><i class="fa-brands fa-whatsapp text-destaque"></i> WhatsApp</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body"><i class="fa-brands fa-instagram text-destaque"></i> Instagram</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body"><i class="fa-brands fa-facebook text-destaque"></i> Facebook</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body"><i class="fa-brands fa-whatsapp text-destaque"></i> WhatsApp</a></li>
                         </ul>
                 </div>
                 <div class="col-md-5 offset-md-1 mb-3">
